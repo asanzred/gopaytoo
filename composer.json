@@ -1,5 +1,6 @@
 {
     "name": "asanzred/gopaytoo",
+    "minimum-stability": "dev",
     "type": "library",
     "description": "Go Paytoo Payment Service for Laravel 5",
     "keywords": [
