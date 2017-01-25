@@ -1,3 +1,3 @@
 <?php
 
-Route::get('/paytoo/test', 'PaytooController@test');
+//Route::get('/paytoo/test', 'PaytooController@test');
