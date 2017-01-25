@@ -2,13 +2,16 @@
 
 namespace Asanzred\Gopaytoo\Http\Controllers;
 
-use ApiSW\Http\Requests;
-use ApiSW\Http\Controllers\Controller;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 
+use Log;
 use Paytoo;
+use Config;
+use SoapClient;
 use Asanzred\Gopaytoo\Libraries\MerchantApiResponse;
 use Asanzred\Gopaytoo\Libraries\PaytooAccountType;
 use Asanzred\Gopaytoo\Libraries\PaytooCreditCardType;
@@ -19,9 +22,6 @@ use Asanzred\Gopaytoo\Libraries\PaytooRequestSearchCriterias;
 use Asanzred\Gopaytoo\Libraries\PaytooRequestType;
 use Asanzred\Gopaytoo\Libraries\PaytooTransactionType;
 
-use Config;
-use Log;
-use SoapClient;
 
 /********************************************
 
