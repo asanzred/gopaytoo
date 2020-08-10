@@ -1,5 +1,5 @@
 <?php
-namespace Asanzred\Gopaytoo;
+namespace Smallworldfs\Gopaytoo;
 
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 

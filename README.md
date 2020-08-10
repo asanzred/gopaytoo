@@ -1,4 +1,4 @@
-# asanzred/gopaytoo
+# smallworldfs/gopaytoo
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -9,7 +9,7 @@
 Via Composer
 
 ``` bash
-$ composer require asanzred/gopaytoo
+$ composer require smallworldfs/gopaytoo
 ```
 
 Add ServiceProvider in your `app.php` config file.
@@ -18,7 +18,7 @@ Add ServiceProvider in your `app.php` config file.
 // config/app.php
 'providers' => [
     ...
-    Asanzred\Gopaytoo\GopaytooServiceProvider::class,
+    Smallworldfs\Gopaytoo\GopaytooServiceProvider::class,
 ]
 ```
 
@@ -28,7 +28,7 @@ and instead on aliases
 // config/app.php
 'aliases' => [
     ...
-    'Paytoo'           => Asanzred\Gopaytoo\Facade::class,
+    'Paytoo'           => Smallworldfs\Gopaytoo\Facade::class,
 ]
 ```
 
@@ -37,7 +37,7 @@ and instead on aliases
 Publish the config by running:
 
 ``` bash
-    php artisan config:publish asanzred/gopaytoo
+    php artisan config:publish smallworldfs/gopaytoo
 ```
 
 ## Usage
@@ -46,15 +46,15 @@ You can find an GopaytooController.php and routes.php with test routes and calls
 
 ``` php
 use Paytoo;
-use Asanzred\Gopaytoo\Libraries\MerchantApiResponse;
-use Asanzred\Gopaytoo\Libraries\PaytooAccountType;
-use Asanzred\Gopaytoo\Libraries\PaytooCreditCardType;
-use Asanzred\Gopaytoo\Libraries\PaytooDocumentType;
-use Asanzred\Gopaytoo\Libraries\PaytooPaymentRequestType;
-use Asanzred\Gopaytoo\Libraries\PaytooRequestDocumentType;
-use Asanzred\Gopaytoo\Libraries\PaytooRequestSearchCriterias;
-use Asanzred\Gopaytoo\Libraries\PaytooRequestType;
-use Asanzred\Gopaytoo\Libraries\PaytooTransactionType;
+use Smallworldfs\Gopaytoo\Libraries\MerchantApiResponse;
+use Smallworldfs\Gopaytoo\Libraries\PaytooAccountType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooCreditCardType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooDocumentType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooPaymentRequestType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooRequestDocumentType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooRequestSearchCriterias;
+use Smallworldfs\Gopaytoo\Libraries\PaytooRequestType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooTransactionType;
 
 ...
 
@@ -130,7 +130,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details
 
 ## Security
 
-If you discover any security related issues, please email asanzred@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email smallworldfs@gmail.com instead of using the issue tracker.
 
 ## Credits
 
@@ -141,12 +141,12 @@ If you discover any security related issues, please email asanzred@gmail.com ins
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/asanzred/gopaytoo.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/smallworldfs/gopaytoo.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/asanzred/gopaytoo.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/smallworldfs/gopaytoo.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/asanzred/gopaytoo
-[link-downloads]: https://packagist.org/packages/asanzred/gopaytoo
-[link-author]: https://github.com/asanzred
+[link-packagist]: https://packagist.org/packages/smallworldfs/gopaytoo
+[link-downloads]: https://packagist.org/packages/smallworldfs/gopaytoo
+[link-author]: https://github.com/smallworldfs
 [link-contributors]: ../../contributors
 

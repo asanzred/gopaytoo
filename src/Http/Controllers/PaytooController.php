@@ -1,6 +1,6 @@
 <?php
 
-namespace Asanzred\Gopaytoo\Http\Controllers;
+namespace Smallworldfs\Gopaytoo\Http\Controllers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -12,15 +12,15 @@ use Log;
 use Paytoo;
 use Config;
 use SoapClient;
-use Asanzred\Gopaytoo\Libraries\MerchantApiResponse;
-use Asanzred\Gopaytoo\Libraries\PaytooAccountType;
-use Asanzred\Gopaytoo\Libraries\PaytooCreditCardType;
-use Asanzred\Gopaytoo\Libraries\PaytooDocumentType;
-use Asanzred\Gopaytoo\Libraries\PaytooPaymentRequestType;
-use Asanzred\Gopaytoo\Libraries\PaytooRequestDocumentType;
-use Asanzred\Gopaytoo\Libraries\PaytooRequestSearchCriterias;
-use Asanzred\Gopaytoo\Libraries\PaytooRequestType;
-use Asanzred\Gopaytoo\Libraries\PaytooTransactionType;
+use Smallworldfs\Gopaytoo\Libraries\MerchantApiResponse;
+use Smallworldfs\Gopaytoo\Libraries\PaytooAccountType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooCreditCardType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooDocumentType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooPaymentRequestType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooRequestDocumentType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooRequestSearchCriterias;
+use Smallworldfs\Gopaytoo\Libraries\PaytooRequestType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooTransactionType;
 
 
 /********************************************

@@ -1,6 +1,6 @@
 <?php
 
-namespace Asanzred\Gopaytoo;
+namespace Smallworldfs\Gopaytoo;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
@@ -25,7 +25,7 @@ class GopaytooServiceProvider extends ServiceProvider
         $this->setupRoutes($this->app->router);
         
         
-        //php artisan vendor:publish --provider="Asanzred\Gopaytoo\GopaytooServiceProvider"
+        //php artisan vendor:publish --provider="Smallworldfs\Gopaytoo\GopaytooServiceProvider"
         $this->publishes([
                 __DIR__.'/config/gopaytoo.php' => config_path('gopaytoo.php'),
         ]);
@@ -44,7 +44,7 @@ class GopaytooServiceProvider extends ServiceProvider
      */
     public function setupRoutes(Router $router)
     {
-        $router->group(['namespace' => 'Asanzred\Gopaytoo\Http\Controllers'], function($router)
+        $router->group(['namespace' => 'Smallworldfs\Gopaytoo\Http\Controllers'], function($router)
         {
             require __DIR__.'/Http/routes.php';
         });
