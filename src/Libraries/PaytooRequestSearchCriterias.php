@@ -1,4 +1,4 @@
-<?php namespace Asanzred\Gopaytoo\Libraries;
+<?php namespace Smallworldfs\Gopaytoo\Libraries;
 
 class PaytooRequestSearchCriterias{
 

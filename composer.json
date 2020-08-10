@@ -1,19 +1,19 @@
 {
-    "name": "asanzred/gopaytoo",
+    "name": "smallworldfs/gopaytoo",
     "minimum-stability": "dev",
     "type": "library",
     "description": "Go Paytoo Payment Service for Laravel 5",
     "keywords": [
-        "Asanzred",
+        "Smallworldfs",
         "Gopaytoo"
     ],
-    "homepage": "https://github.com/asanzred/gopaytoo",
+    "homepage": "https://github.com/smallworldfs/gopaytoo",
     "license": "MIT",
     "authors": [
         {
             "name": "Alberto Sanz Redondo",
-            "email": "asanzred@gmail.com",
-            "homepage": "https://github.com/asanzred",
+            "email": "smallworldfs@gmail.com",
+            "homepage": "https://github.com/smallworldfs",
             "role": "Developer"
         }
     ],
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Asanzred\\Gopaytoo\\": "src"
+            "Smallworldfs\\Gopaytoo\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Asanzred\\Gopaytoo\\": "tests"
+            "Smallworldfs\\Gopaytoo\\": "tests"
         }
     },
     "scripts": {

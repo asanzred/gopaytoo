@@ -1,16 +1,16 @@
 <?php
 
-namespace Asanzred\Gopaytoo;
+namespace Smallworldfs\Gopaytoo;
 
-use Asanzred\Gopaytoo\Libraries\MerchantApiResponse;
-use Asanzred\Gopaytoo\Libraries\PaytooAccountType;
-use Asanzred\Gopaytoo\Libraries\PaytooCreditCardType;
-use Asanzred\Gopaytoo\Libraries\PaytooDocumentType;
-use Asanzred\Gopaytoo\Libraries\PaytooPaymentRequestType;
-use Asanzred\Gopaytoo\Libraries\PaytooRequestDocumentType;
-use Asanzred\Gopaytoo\Libraries\PaytooRequestSearchCriterias;
-use Asanzred\Gopaytoo\Libraries\PaytooRequestType;
-use Asanzred\Gopaytoo\Libraries\PaytooTransactionType;
+use Smallworldfs\Gopaytoo\Libraries\MerchantApiResponse;
+use Smallworldfs\Gopaytoo\Libraries\PaytooAccountType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooCreditCardType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooDocumentType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooPaymentRequestType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooRequestDocumentType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooRequestSearchCriterias;
+use Smallworldfs\Gopaytoo\Libraries\PaytooRequestType;
+use Smallworldfs\Gopaytoo\Libraries\PaytooTransactionType;
 
 use Config;
 use Log;
@@ -28,17 +28,17 @@ class Gopaytoo
 
         $options = Config::get('gopaytoo.options');
         $options['classmap'] = array(
-                                    "Asanzred\Gopaytoo\Libraries\PaytooAccountType"            =>"PaytooAccountType", 
-                                    "Asanzred\Gopaytoo\Libraries\PaytooCreditCardType"         =>"PaytooCreditCardType",
-                                    "Asanzred\Gopaytoo\Libraries\MerchantApiResponse"          => "MerchantApiResponse", 
-                                    "Asanzred\Gopaytoo\Libraries\PaytooAccountType"            => "PaytooAccountType", 
-                                    "Asanzred\Gopaytoo\Libraries\PaytooCreditCardType"         => "PaytooCreditCardType", 
-                                    "Asanzred\Gopaytoo\Libraries\PaytooDocumentType"           => "PaytooDocumentType", 
-                                    "Asanzred\Gopaytoo\Libraries\PaytooPaymentRequestType"     => "PaytooPaymentRequestType", 
-                                    "Asanzred\Gopaytoo\Libraries\PaytooRequestDocumentType"    => "PaytooRequestDocumentType", 
-                                    "Asanzred\Gopaytoo\Libraries\PaytooRequestSearchCriterias" => "PaytooRequestSearchCriterias", 
-                                    "Asanzred\Gopaytoo\Libraries\PaytooRequestType"            => "PaytooRequestType", 
-                                    "Asanzred\Gopaytoo\Libraries\PaytooTransactionType"        => "PaytooTransactionType"
+                                    "Smallworldfs\Gopaytoo\Libraries\PaytooAccountType"            =>"PaytooAccountType", 
+                                    "Smallworldfs\Gopaytoo\Libraries\PaytooCreditCardType"         =>"PaytooCreditCardType",
+                                    "Smallworldfs\Gopaytoo\Libraries\MerchantApiResponse"          => "MerchantApiResponse", 
+                                    "Smallworldfs\Gopaytoo\Libraries\PaytooAccountType"            => "PaytooAccountType", 
+                                    "Smallworldfs\Gopaytoo\Libraries\PaytooCreditCardType"         => "PaytooCreditCardType", 
+                                    "Smallworldfs\Gopaytoo\Libraries\PaytooDocumentType"           => "PaytooDocumentType", 
+                                    "Smallworldfs\Gopaytoo\Libraries\PaytooPaymentRequestType"     => "PaytooPaymentRequestType", 
+                                    "Smallworldfs\Gopaytoo\Libraries\PaytooRequestDocumentType"    => "PaytooRequestDocumentType", 
+                                    "Smallworldfs\Gopaytoo\Libraries\PaytooRequestSearchCriterias" => "PaytooRequestSearchCriterias", 
+                                    "Smallworldfs\Gopaytoo\Libraries\PaytooRequestType"            => "PaytooRequestType", 
+                                    "Smallworldfs\Gopaytoo\Libraries\PaytooTransactionType"        => "PaytooTransactionType"
                                 );
 
         $this->soap = new SoapClient(Config::get('gopaytoo.ws_url'), $options);
